@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B00897722E1137800DF35CA /* operations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B00897622E1137800DF35CA /* operations.cpp */; };
+		5B00897E22E123F900DF35CA /* libSDL2_mixer-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B00897D22E123F900DF35CA /* libSDL2_mixer-2.0.0.dylib */; };
+		5B00898522E15EB900DF35CA /* libSDL2_ttf-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B00898422E15EB900DF35CA /* libSDL2_ttf-2.0.0.dylib */; };
+		5B0BC79522DE651B00BF9B15 /* point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B0BC79422DE651B00BF9B15 /* point.cpp */; };
+		5B0BC79722DE655B00BF9B15 /* borders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B0BC79622DE655B00BF9B15 /* borders.cpp */; };
+		5B0E390E22DBE13A00606210 /* realplayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E390D22DBE13A00606210 /* realplayer.cpp */; };
+		5B0E391122DBE30500606210 /* virtualplayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E391022DBE30500606210 /* virtualplayer.cpp */; };
+		5B37876B22D96A7B000C660D /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B37876A22D96A7B000C660D /* libSDL2_image-2.0.0.dylib */; };
+		5BF93B6E22D8CED100350AA1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BF93B6D22D8CED100350AA1 /* main.cpp */; };
+		5BF93B7622D8D08300350AA1 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF93B7522D8D08300350AA1 /* libSDL2-2.0.0.dylib */; };
+		5BF93B7C22D9069700350AA1 /* board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BF93B7A22D9069700350AA1 /* board.cpp */; };
+		5BF93B7F22D9300F00350AA1 /* engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BF93B7E22D9300F00350AA1 /* engine.cpp */; };
+		5BF93B8622D930D200350AA1 /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BF93B8522D930D200350AA1 /* ball.cpp */; };
+		5BF93B8922D931C100350AA1 /* brassy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BF93B8822D931C100350AA1 /* brassy.cpp */; };
+		5BF93B8C22D9329200350AA1 /* gates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BF93B8B22D9329200350AA1 /* gates.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5BF93B6822D8CED100350AA1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B00897522E112BE00DF35CA /* operations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = operations.h; sourceTree = "<group>"; };
+		5B00897622E1137800DF35CA /* operations.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = operations.cpp; sourceTree = "<group>"; };
+		5B00897D22E123F900DF35CA /* libSDL2_mixer-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_mixer-2.0.0.dylib"; path = "../../../../../../usr/local/Cellar/sdl2_mixer/2.0.4/lib/libSDL2_mixer-2.0.0.dylib"; sourceTree = "<group>"; };
+		5B00898022E12BD200DF35CA /* goalsong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goalsong.wav; sourceTree = "<group>"; };
+		5B00898122E12BD200DF35CA /* startgame.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = startgame.wav; sourceTree = "<group>"; };
+		5B00898222E12BD200DF35CA /* brassykickball.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = brassykickball.wav; sourceTree = "<group>"; };
+		5B00898322E12BD200DF35CA /* ballkickboard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ballkickboard.wav; sourceTree = "<group>"; };
+		5B00898422E15EB900DF35CA /* libSDL2_ttf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_ttf-2.0.0.dylib"; path = "../../../../../../usr/local/Cellar/sdl2_ttf/2.0.15/lib/libSDL2_ttf-2.0.0.dylib"; sourceTree = "<group>"; };
+		5B00898722E1636100DF35CA /* Arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arial.ttf; sourceTree = "<group>"; };
+		5B02178122DA82C70068D7F6 /* brassy.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = brassy.bmp; sourceTree = "<group>"; };
+		5B0BC79222DE5ECF00BF9B15 /* borders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = borders.h; sourceTree = "<group>"; };
+		5B0BC79322DE63B800BF9B15 /* point.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = point.h; sourceTree = "<group>"; };
+		5B0BC79422DE651B00BF9B15 /* point.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = point.cpp; sourceTree = "<group>"; };
+		5B0BC79622DE655B00BF9B15 /* borders.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = borders.cpp; sourceTree = "<group>"; };
+		5B0E390C22DBE0FE00606210 /* realplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = realplayer.h; sourceTree = "<group>"; };
+		5B0E390D22DBE13A00606210 /* realplayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = realplayer.cpp; sourceTree = "<group>"; };
+		5B0E390F22DBE28800606210 /* virtualplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = virtualplayer.h; sourceTree = "<group>"; };
+		5B0E391022DBE30500606210 /* virtualplayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = virtualplayer.cpp; sourceTree = "<group>"; };
+		5B37876A22D96A7B000C660D /* libSDL2_image-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_image-2.0.0.dylib"; path = "../../../../../../usr/local/Cellar/sdl2_image/2.0.4/lib/libSDL2_image-2.0.0.dylib"; sourceTree = "<group>"; };
+		5B37877222D9DE1C000C660D /* board.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = board.bmp; sourceTree = "<group>"; };
+		5B37877722D9E632000C660D /* ball.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ball.bmp; sourceTree = "<group>"; };
+		5BF93B6A22D8CED100350AA1 /* Air Hockey */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Air Hockey"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF93B6D22D8CED100350AA1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5BF93B7522D8D08300350AA1 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../../usr/local/Cellar/sdl2/2.0.9_1/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		5BF93B7922D9063100350AA1 /* board.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = board.h; sourceTree = "<group>"; };
+		5BF93B7A22D9069700350AA1 /* board.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = board.cpp; sourceTree = "<group>"; };
+		5BF93B7E22D9300F00350AA1 /* engine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = engine.cpp; sourceTree = "<group>"; };
+		5BF93B8022D9302700350AA1 /* engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		5BF93B8122D9307100350AA1 /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		5BF93B8422D930C300350AA1 /* ball.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ball.h; sourceTree = "<group>"; };
+		5BF93B8522D930D200350AA1 /* ball.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ball.cpp; sourceTree = "<group>"; };
+		5BF93B8722D931A900350AA1 /* brassy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = brassy.h; sourceTree = "<group>"; };
+		5BF93B8822D931C100350AA1 /* brassy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = brassy.cpp; sourceTree = "<group>"; };
+		5BF93B8A22D9327600350AA1 /* gates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gates.h; sourceTree = "<group>"; };
+		5BF93B8B22D9329200350AA1 /* gates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gates.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BF93B6722D8CED100350AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B00898522E15EB900DF35CA /* libSDL2_ttf-2.0.0.dylib in Frameworks */,
+				5B00897E22E123F900DF35CA /* libSDL2_mixer-2.0.0.dylib in Frameworks */,
+				5B37876B22D96A7B000C660D /* libSDL2_image-2.0.0.dylib in Frameworks */,
+				5BF93B7622D8D08300350AA1 /* libSDL2-2.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B00897822E11C2F00DF35CA /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				5B00898322E12BD200DF35CA /* ballkickboard.wav */,
+				5B00898222E12BD200DF35CA /* brassykickball.wav */,
+				5B00898022E12BD200DF35CA /* goalsong.wav */,
+				5B00898122E12BD200DF35CA /* startgame.wav */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+		5B00898622E1634900DF35CA /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5B00898722E1636100DF35CA /* Arial.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		5BF93B6122D8CED100350AA1 = {
+			isa = PBXGroup;
+			children = (
+				5BF93B6C22D8CED100350AA1 /* Air Hockey */,
+				5BF93B6B22D8CED100350AA1 /* Products */,
+				5BF93B7422D8D08300350AA1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5BF93B6B22D8CED100350AA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BF93B6A22D8CED100350AA1 /* Air Hockey */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BF93B6C22D8CED100350AA1 /* Air Hockey */ = {
+			isa = PBXGroup;
+			children = (
+				5B00897822E11C2F00DF35CA /* audio */,
+				5BF93B8D22D9332A00350AA1 /* images */,
+				5B00898622E1634900DF35CA /* fonts */,
+				5BF93B7722D905DB00350AA1 /* headers */,
+				5BF93B7822D905F000350AA1 /* sources */,
+			);
+			path = "Air Hockey";
+			sourceTree = "<group>";
+		};
+		5BF93B7422D8D08300350AA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B00898422E15EB900DF35CA /* libSDL2_ttf-2.0.0.dylib */,
+				5B00897D22E123F900DF35CA /* libSDL2_mixer-2.0.0.dylib */,
+				5B37876A22D96A7B000C660D /* libSDL2_image-2.0.0.dylib */,
+				5BF93B7522D8D08300350AA1 /* libSDL2-2.0.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BF93B7722D905DB00350AA1 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				5BF93B8422D930C300350AA1 /* ball.h */,
+				5BF93B7922D9063100350AA1 /* board.h */,
+				5B0BC79222DE5ECF00BF9B15 /* borders.h */,
+				5BF93B8722D931A900350AA1 /* brassy.h */,
+				5BF93B8022D9302700350AA1 /* engine.h */,
+				5BF93B8A22D9327600350AA1 /* gates.h */,
+				5B00897522E112BE00DF35CA /* operations.h */,
+				5BF93B8122D9307100350AA1 /* player.h */,
+				5B0BC79322DE63B800BF9B15 /* point.h */,
+				5B0E390C22DBE0FE00606210 /* realplayer.h */,
+				5B0E390F22DBE28800606210 /* virtualplayer.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		5BF93B7822D905F000350AA1 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				5BF93B8522D930D200350AA1 /* ball.cpp */,
+				5BF93B7A22D9069700350AA1 /* board.cpp */,
+				5B0BC79622DE655B00BF9B15 /* borders.cpp */,
+				5BF93B8822D931C100350AA1 /* brassy.cpp */,
+				5BF93B7E22D9300F00350AA1 /* engine.cpp */,
+				5BF93B8B22D9329200350AA1 /* gates.cpp */,
+				5BF93B6D22D8CED100350AA1 /* main.cpp */,
+				5B00897622E1137800DF35CA /* operations.cpp */,
+				5B0BC79422DE651B00BF9B15 /* point.cpp */,
+				5B0E390D22DBE13A00606210 /* realplayer.cpp */,
+				5B0E391022DBE30500606210 /* virtualplayer.cpp */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		5BF93B8D22D9332A00350AA1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5B37877722D9E632000C660D /* ball.bmp */,
+				5B37877222D9DE1C000C660D /* board.bmp */,
+				5B02178122DA82C70068D7F6 /* brassy.bmp */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BF93B6922D8CED100350AA1 /* Air Hockey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF93B7122D8CED100350AA1 /* Build configuration list for PBXNativeTarget "Air Hockey" */;
+			buildPhases = (
+				5BF93B6622D8CED100350AA1 /* Sources */,
+				5BF93B6722D8CED100350AA1 /* Frameworks */,
+				5BF93B6822D8CED100350AA1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Air Hockey";
+			productName = "Air Hockey";
+			productReference = 5BF93B6A22D8CED100350AA1 /* Air Hockey */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BF93B6222D8CED100350AA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = YuriySavchenko;
+				TargetAttributes = {
+					5BF93B6922D8CED100350AA1 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 5BF93B6522D8CED100350AA1 /* Build configuration list for PBXProject "Air Hockey" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5BF93B6122D8CED100350AA1;
+			productRefGroup = 5BF93B6B22D8CED100350AA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BF93B6922D8CED100350AA1 /* Air Hockey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BF93B6622D8CED100350AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B0E390E22DBE13A00606210 /* realplayer.cpp in Sources */,
+				5BF93B7C22D9069700350AA1 /* board.cpp in Sources */,
+				5BF93B7F22D9300F00350AA1 /* engine.cpp in Sources */,
+				5B00897722E1137800DF35CA /* operations.cpp in Sources */,
+				5BF93B8622D930D200350AA1 /* ball.cpp in Sources */,
+				5BF93B6E22D8CED100350AA1 /* main.cpp in Sources */,
+				5B0BC79522DE651B00BF9B15 /* point.cpp in Sources */,
+				5BF93B8C22D9329200350AA1 /* gates.cpp in Sources */,
+				5B0E391122DBE30500606210 /* virtualplayer.cpp in Sources */,
+				5BF93B8922D931C100350AA1 /* brassy.cpp in Sources */,
+				5B0BC79722DE655B00BF9B15 /* borders.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5BF93B6F22D8CED100350AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5BF93B7022D8CED100350AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5BF93B7222D8CED100350AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2/2.0.9_1/lib,
+					/usr/local/Cellar/sdl2_image/2.0.4/lib,
+					/usr/local/Cellar/sdl2_mixer/2.0.4/lib,
+					/usr/local/Cellar/sdl2_ttf/2.0.15/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5BF93B7322D8CED100350AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2/2.0.9_1/lib,
+					/usr/local/Cellar/sdl2_image/2.0.4/lib,
+					/usr/local/Cellar/sdl2_mixer/2.0.4/lib,
+					/usr/local/Cellar/sdl2_ttf/2.0.15/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BF93B6522D8CED100350AA1 /* Build configuration list for PBXProject "Air Hockey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF93B6F22D8CED100350AA1 /* Debug */,
+				5BF93B7022D8CED100350AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BF93B7122D8CED100350AA1 /* Build configuration list for PBXNativeTarget "Air Hockey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF93B7222D8CED100350AA1 /* Debug */,
+				5BF93B7322D8CED100350AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BF93B6222D8CED100350AA1 /* Project object */;
+}

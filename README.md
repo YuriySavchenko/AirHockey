@@ -12,7 +12,8 @@ during game.Virtual player it's the easiest enemy for you. Every event has own s
   * collision between ball and board;
   * sound of goal;
   * sound of start for game;
-For reseting scores of both players you can press ESC key;
+  
+For reseting scores of both players you can press ESC key.
 
 ![photo_2019-07-19 17 53 13](https://user-images.githubusercontent.com/36791929/61544510-5020ab00-aa4e-11e9-8d9d-5d5575a3e267.jpeg)
 

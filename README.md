@@ -7,7 +7,7 @@
 
 Purpose of game very simple - you need beat ball into gates, but against you plays Computer so be accurately! 
 Physics of game also simple and don't have hard mathematical formulas. Speed of ball are static and don't change 
-during game.Virtual player it's the easiest enemy for you. Every event has own sound, for example:
+during game. Virtual player it's the easiest enemy for you. Every event has own sound, for example:
   * collision between brassy and ball;
   * collision between ball and board;
   * sound of goal;
